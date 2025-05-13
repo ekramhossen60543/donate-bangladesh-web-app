@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- Daisy Ui CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- share style -->
+    <style>
+      .btn-donate {
+        background-color: #b4f461;
+      }
+      .active-btn {
+        background-color: #b4f461;
+      }
+      .default-btn {
+        background: transparent;
+      }
+    </style>
+  </head>
+  <body class="font-[Lexend] w-full">
+    <header class="w-full bg-[#F9F7F3]">
+      <nav
+        class="max-w-6xl mx-auto pt-6 flex flex-col-reverse pb-6 sm:flex-row items-center sm:justify-between sm:gap-0 gap-5"
+      >
+        <!-- blog btn start-->
+        <div class="ml-2">
+          <button
+            class="btn btn-donate px-8 py-6 rounded-lg text-xl font-semibold"
+          >
+            Blog
+          </button>
+        </div>
+        <!-- blog btn end -->
+
+        <!-- donate bangladesh start -->
+        <div class="flex items-center gap-4">
+          <img class="w-12 h-12" src="assets/logo.png" alt="" />
+          <h3 class="text-xl font-semibold text-[#111111]">
+            Donate Bangladesh
+          </h3>
+        </div>
+        <!-- donate bangladesh end -->
+
+        <!-- main balance start -->
+        <div class="flex items-center gap-2 mr-2">
+          <img class="w-7 h-7" src="assets/coin.png" alt="" />
+          <h3 class="text-xl font-semibold text-[#1111119d]">
+            <span>5500</span> <span>BDT</span>
+          </h3>
+        </div>
+        <!-- main balance end -->
+      </nav>
+    </header>
+    <main class="max-w-[1140px] mx-auto">
+      <!-- Donation and History Button Start -->
+      <div class="flex justify-center gap-4 mt-40 mb-10">
+        <button
+          id="btn-donation"
+          class="btn default-btn px-8 py-6 rounded-lg text-xl font-semibold"
+        >
+          Donation
+        </button>
+        <button
+          id="btn-history"
+          class="btn px-8 py-6 active-btn border-3 rounded-lg text-xl font-semibold"
+        >
+          History
+        </button>
+      </div>
+      <!-- Donation and History Button End -->
+
+      <!-- Cards Start -->
+      <div class="mx-2">
+        <div
+          class="card border-1 border-gray-200 rounded-lg bg-base-100 w-full font-bold"
+        >
+          <div class="card-body">
+            <h2 class="text-xl">
+              <span>9500</span> Taka is Donated famine-2024 at Feni, Bangladesh
+            </h2>
+            <p class="font-light text-gray-600 text-base">
+              Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
+              Time)
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Cards End -->
+    </main>
+    <footer class="w-full h-32 absolute bottom-0 bg-[#F9F7F3]"></footer>
+    <script src="js/history.js"></script>
+  </body>
+</html>
