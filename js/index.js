@@ -15,5 +15,5 @@ document.getElementById("btn-history").addEventListener("click", function () {
   btnDonate.classList.add("default-btn");
 
   // if clicked then opened the History page
-  window.location.href = "history.html";
+  // window.location.href = "history.html";
 });

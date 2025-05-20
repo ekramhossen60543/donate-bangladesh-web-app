@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>History Page</title>
     <!-- Daisy Ui CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -33,13 +33,14 @@
     </style>
   </head>
   <body class="font-[Lexend] w-full">
-    <header class="w-full bg-[#F9F7F3]">
+    <header class="w-full bg-[#F9F7F3] sticky top-0 z-10">
       <nav
         class="max-w-6xl mx-auto pt-6 flex flex-col-reverse pb-6 sm:flex-row items-center sm:justify-between sm:gap-0 gap-5"
       >
         <!-- blog btn start-->
         <div class="ml-2">
           <button
+            id="btn-blog"
             class="btn btn-donate px-8 py-6 rounded-lg text-xl font-semibold"
           >
             Blog
@@ -81,28 +82,22 @@
         >
           History
         </button>
+        <button
+          id="btn-history-delete"
+          class="btn hover:bg-red-500 px-8 py-6 rounded-lg text-xl font-semibold"
+        >
+          Delete All
+        </button>
       </div>
       <!-- Donation and History Button End -->
 
       <!-- Cards Start -->
-      <div class="mx-2">
-        <div
-          class="card border-1 border-gray-200 rounded-lg bg-base-100 w-full font-bold"
-        >
-          <div class="card-body">
-            <h2 class="text-xl">
-              <span>9500</span> Taka is Donated famine-2024 at Feni, Bangladesh
-            </h2>
-            <p class="font-light text-gray-600 text-base">
-              Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
-              Time)
-            </p>
-          </div>
-        </div>
+      <div id="history-cards" class="mx-2 flex flex-col gap-5">
+        <!-- All Transaction -->
       </div>
       <!-- Cards End -->
     </main>
-    <footer class="w-full h-32 absolute bottom-0 bg-[#F9F7F3]"></footer>
+
     <script src="js/history.js"></script>
   </body>
 </html>
